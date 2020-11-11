@@ -1,29 +1,29 @@
-var ElForm = document.querySelector('.form');
-var ElInput = ElForm.querySelector('.form-input');
-var ElBtn = ElForm.querySelector('.main-button');
-var ElResult = document.querySelector('.game-text');
+var elForm = document.querySelector('.form');
+var elInput = elForm.querySelector('.form-input');
+var elBtn = elForm.querySelector('.main-button');
+var elResult = document.querySelector('.game-text');
 
 
-ElForm.addEventListener('submit' , function(evt){
+elForm.addEventListener('submit', function(evt){
   evt.preventDefault();
-  var ElForma = parseFloat(ElInput.value.trim() , 10);
+  var elForma = parseFloat(elInput.value.trim(), 10);
 
 
 
-  if( ElForma % 3 === 0 && ElForma % 5 === 0 ){
-    ElResult.textContent = "FizzBuzz";
+  if( elForma % 3 === 0 && elForma % 5 === 0 ){
+    elResult.textContent = "FizzBuzz";
     return;
   }
-  if( ElForma % 3 === 0){
-    ElResult.textContent = "Fizz";
+  if( elForma % 3 === 0){
+    elResult.textContent = "Fizz";
     return;
   }
-  if( ElForma % 5 === 0){
-    ElResult.textContent = "Buzz";
+  if( elForma % 5 === 0){
+    elResult.textContent = "Buzz";
     return;
   }
-  if( ElForma % 3 != 0 || ElForma % 5 != 0 ){
-    ElResult.textContent = "Error";
+  if( elForma % 3 != 0 || elForma % 5 != 0 ){
+    elResult.textContent = "Error";
     return;
   }
 
